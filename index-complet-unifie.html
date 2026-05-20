@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&N Capital Group - Groupe d'Investissement Stratégique</title>
+    <meta name="description" content="M&N Capital Group - Groupe d'investissement stratégique de premier plan spécialisé dans l'agriculture, la mine, la formation, le digital et les services financiers.">
+    <meta name="keywords" content="M&N Capital Group, CEA, CAUTIONA, JESMAG, Digi+, investissement, agriculture, mine, formation, digital, Sénégal, Afrique">
+    <meta name="author" content="M&N Capital Group">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="M&N Capital Group - Des partenariats Solides pour des résultats durables">
+    <meta property="og:description" content="Groupe d'investissement stratégique spécialisé dans l'agriculture, la mine, la formation, le digital et les services financiers.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mncapital-group.com/img/mn-capital-logo.png">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:site_name" content="M&N Capital Group">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://mncapital-group.com/img/mn-capital-logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://mncapital-group.com/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://mncapital-group.com/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://mncapital-group.com/img/apple-touch-icon.png">
+    
+    <!-- Structured Data pour Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "M&N Capital Group",
+        "url": "https://mncapital-group.com",
+        "logo": "https://mncapital-group.com/img/mn-capital-logo.png",
+        "description": "Groupe d'investissement stratégique de premier plan spécialisé dans l'agriculture, la mine, la formation, le digital et les services financiers",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Foire immeuble 147",
+            "addressLocality": "Dakar",
+            "addressCountry": "Sénégal"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+221 78 437 22 13",
+            "contactType": "customer service"
+        }
+    }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- CSS intégré -->
+    <style>
+        /* M&N Capital Group - Corporate Professional Style */
+
+        /* Variables CSS Corporate */
+        :root {
+            --primary-blue: #1e3a8a;
+            --secondary-blue: #3b82f6;
+            --accent-gold: #f59e0b;
+            --accent-orange: #fb923c;
+            --primary-dark: #1f2937;
+            --text-primary: #111827;
+            --text-secondary: #6b7280;
+            --text-light: #9ca3af;
+            --bg-white: #ffffff;
+            --bg-light: #f9fafb;
+            --bg-gray: #f3f4f6;
+            --border-light: #e5e7eb;
+            --border-gray: #d1d5db;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --gradient-primary: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            --gradient-accent: linear-gradient(135deg, var(--accent-gold), var(--accent-orange));
+        }
+
+        /* Reset et styles de base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            overflow-x: hidden;
+            background: var(--bg-white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header et Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .navbar {
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover img {
+            transform: scale(1.05);
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-blue);
+        }
+
+        .nav-menu a:hover::after,
+        .nav-menu a.active::after {
+            width: 100%;
+        }
+
+        .nav-menu a.active {
+            color: var(--primary-blue);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary-dark);
+            transition: all 0.3s ease;
+        }
+
+        /* Sections */
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-logo {
+            margin-bottom: 2rem;
+        }
+
+        .hero-logo img {
+            height: 100px;
+            width: auto;
+            filter: brightness(0) invert(1);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .tagline {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary-blue);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary-blue);
+        }
+
+        /* Quick Stats */
+        .quick-stats {
+            background: var(--bg-light);
+            padding: 3rem 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        /* Why Choose Us Section */
+        .why-choose {
+            background: var(--bg-light);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-light);
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-blue);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-blue), #2563eb);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .feature-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+
+        .feature-item p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Recent Projects Section */
+        .recent-projects {
+            background: white;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .project-card {
+            background: var(--bg-light);
+            padding: 2.5rem 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-blue), var(--accent-gold));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .project-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-blue), #2563eb);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .project-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+
+        .project-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Filiales Section */
+        .filiales-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .filiale-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-light);
+        }
+
+        .filiale-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .filiale-logo {
+            padding: 2rem;
+            text-align: center;
+            background: var(--bg-light);
+        }
+
+        .filiale-logo img {
+            height: 80px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .filiale-logo:hover img {
+            transform: scale(1.1);
+        }
+
+        .filiale-card h3 {
+            text-align: center;
+            padding: 1.5rem 1rem 1rem;
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            margin: 0;
+        }
+
+        .filiale-card p {
+            padding: 0 2rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-item {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-light);
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-blue);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .service-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+
+        .service-item p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            background: var(--bg-light);
+            padding: 2.5rem;
+            border-radius: 15px;
+        }
+
+        .contact-info h3 {
+            color: var(--primary-dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item i {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--border-light);
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-dark);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--accent-gold);
+        }
+
+        .footer-section p,
+        .footer-section ul {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-light);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .filiales-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Corporate Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="img/mn-capital-logo.png" alt="M&N Capital Group" loading="lazy">
+                    <span class="logo-text">M&N Capital Group</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#accueil" class="active">Accueil</a></li>
+                    <li><a href="#apropos">À Propos</a></li>
+                    <li><a href="#filiales">Nos Filiales</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- ACCUEIL SECTION -->
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="img/mn-capital-logo.png" alt="M&N Capital Group" loading="lazy">
+                </div>
+                <h1>M&N Capital Group</h1>
+                <p class="tagline">Des partenariats Solides pour des résultats durables</p>
+                <div class="hero-buttons">
+                    <a href="#filiales" class="btn btn-primary">
+                        <i class="fas fa-building"></i>
+                        Découvrir nos filiales
+                    </a>
+                    <a href="#contacts" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Nous contacter
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Stats Section -->
+        <section class="quick-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Années d'Expérience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Filiales Spécialisées</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">9</div>
+                        <div class="stat-label">Secteurs d'Activité</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Engagement Client</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="pourquoi-nous" class="why-choose section">
+            <div class="container">
+                <h2 class="section-title">Pourquoi Choisir M&N Capital Group</h2>
+                <p class="section-subtitle">L'excellence opérationnelle au service de vos ambitions</p>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Partenariats Solides</h3>
+                        <p>Nous construisons des alliances stratégiques basées sur la confiance et la performance mutuelle.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Innovation Continue</h3>
+                        <p>Nous anticipons les tendances du marché pour développer des solutions avant-gardistes.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Sécurité Maximale</h3>
+                        <p>Vos projets sont protégés par nos solutions de garantie et d'assurance complètes.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe-africa"></i>
+                        </div>
+                        <h3>Expertise Locale</h3>
+                        <p>Une connaissance approfondie du marché africain et de ses opportunités uniques.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Projects Section -->
+        <section id="realisations" class="recent-projects section">
+            <div class="container">
+                <h2 class="section-title">Nos Réalisations Récentes</h2>
+                <p class="section-subtitle">Des projets qui transforment l'avenir</p>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Projet Agro-Industriel</h3>
+                        <p>Développement d'une chaîne de valeur agricole moderne avec 500+ emplois créés.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Formation de 1000+ Étudiants</h3>
+                        <p>Programme de certification professionnelle avec un taux d'insertion de 85%.</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Transformation Digitale</h3>
+                        <p>Modernisation de 20+ entreprises avec des solutions IA et cloud.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- À PROPOS SECTION -->
+        <section id="apropos" class="section">
+            <div class="container">
+                <h2 class="section-title">À Propos de M&N Capital Group</h2>
+                <p class="section-subtitle">L'excellence au service de l'Afrique</p>
+                
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 2rem;">
+                        Fondé sur des valeurs d'intégrité, d'innovation et de performance, M&N Capital Group s'est imposé comme un acteur majeur de l'investissement stratégique en Afrique de l'Ouest. Notre expertise couvre neuf secteurs clés, de l'agriculture à la transformation digitale.
+                    </p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                        <div style="text-align: center; padding: 2rem; background: var(--bg-light); border-radius: 15px;">
+                            <i class="fas fa-eye" style="font-size: 2rem; color: var(--primary-blue); margin-bottom: 1rem;"></i>
+                            <h4 style="color: var(--primary-dark); margin-bottom: 0.5rem;">Notre Vision</h4>
+                            <p style="color: var(--text-secondary);">Devenir le leader de l'investissement responsable en Afrique</p>
+                        </div>
+                        
+                        <div style="text-align: center; padding: 2rem; background: var(--bg-light); border-radius: 15px;">
+                            <i class="fas fa-bullseye" style="font-size: 2rem; color: var(--accent-gold); margin-bottom: 1rem;"></i>
+                            <h4 style="color: var(--primary-dark); margin-bottom: 0.5rem;">Notre Mission</h4>
+                            <p style="color: var(--text-secondary);">Créer de la valeur durable pour nos partenaires et communautés</p>
+                        </div>
+                        
+                        <div style="text-align: center; padding: 2rem; background: var(--bg-light); border-radius: 15px;">
+                            <i class="fas fa-heart" style="font-size: 2rem; color: var(--accent-orange); margin-bottom: 1rem;"></i>
+                            <h4 style="color: var(--primary-dark); margin-bottom: 0.5rem;">Nos Valeurs</h4>
+                            <p style="color: var(--text-secondary);">Intégrité, Innovation, Excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FILIALES SECTION -->
+        <section id="filiales" class="section">
+            <div class="container">
+                <h2 class="section-title">Nos Filiales</h2>
+                <p class="section-subtitle">Quatre entités spécialisées au service de votre succès</p>
+                
+                <div class="filiales-grid">
+                    <div class="filiale-card">
+                        <div class="filiale-logo">
+                            <img src="img/CEA.png.jpeg" alt="CEA - Centre d'Excellence en Commerce" loading="lazy">
+                        </div>
+                        <h3>CEA</h3>
+                        <p><strong>Centre d'Excellence en Commerce</strong><br>
+                        Formation et insertion professionnelle dans les métiers du commerce. Préparation aux certifications et accompagnement vers l'emploi.</p>
+                        <div style="padding: 0 2rem 2rem;">
+                            <a href="../../cea/index-extraordinaire.html" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                                <i class="fas fa-external-link-alt"></i>
+                                Visiter le site CEA
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="filiale-card">
+                        <div class="filiale-logo">
+                            <img src="img/cautiona.png.jpeg" alt="CAUTIONA" loading="lazy">
+                        </div>
+                        <h3>CAUTIONA</h3>
+                        <p><strong>Solutions de Cautionnement et Assurance</strong><br>
+                        Protection financière et garantie pour vos projets. Solutions adaptées aux besoins des entreprises et particuliers.</p>
+                        <div style="padding: 0 2rem 2rem;">
+                            <a href="https://www.cautiona.sn" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                                <i class="fas fa-globe"></i>
+                                Visiter cautiona.sn
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="filiale-card">
+                        <div class="filiale-logo">
+                            <img src="img/Jesmag.png.jpeg" alt="JESMAG - Magazine sur l'Entrepreneuriat" loading="lazy">
+                        </div>
+                        <h3>JESMAG</h3>
+                        <p><strong>Magazine sur l'Entrepreneuriat</strong><br>
+                        Filiale média spécialisée dans la publication d'un magazine dédié à l'entrepreneuriat, JESMAG inspire et guide les entrepreneurs vers le succès.</p>
+                        <div style="padding: 0 2rem 2rem;">
+                            <a href="#contacts" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                                <i class="fas fa-newspaper"></i>
+                                JESMAG - Magazine Entrepreneuriat
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="filiale-card">
+                        <div class="filiale-logo">
+                            <img src="img/Logo Digi+_070552.png" alt="Digi+ - Solutions Digitales et Technologiques" loading="lazy">
+                        </div>
+                        <h3>Digi+</h3>
+                        <p><strong>Solutions Digitales et Technologiques</strong><br>
+                        Filiale innovante spécialisée dans la transformation digitale, Digi+ développe des solutions web, mobiles et IA pour moderniser votre entreprise.</p>
+                        <div style="padding: 0 2rem 2rem;">
+                            <a href="../../digiplus/index.html" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                                <i class="fas fa-external-link-alt"></i>
+                                Visiter le site Digi+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title">Nos Services</h2>
+                <p class="section-subtitle">Neuf secteurs d'excellence pour répondre à tous vos besoins</p>
+                
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Agriculture</h3>
+                        <p>Développement de projets agricoles modernes, formation des agriculteurs et optimisation des chaînes de valeur.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Mine et Industrie</h3>
+                        <p>Développement de projets miniers, solutions industrielles innovantes et optimisation des processus de production.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Formation</h3>
+                        <p>Programmes de certification professionnelle, développement des compétences et accompagnement vers l'emploi.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Transformation Digitale</h3>
+                        <p>Développement de solutions web, mobiles, IA et cloud pour la modernisation des entreprises.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <h3>Média</h3>
+                        <p>Production de contenu, communication stratégique et édition de magazines spécialisés.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Services Financiers</h3>
+                        <p>Solutions de financement, cautionnement et gestion de patrimoine adaptées à vos besoins.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Immobilier</h3>
+                        <p>Développement de projets immobiliers, gestion de biens et conseil en investissement immobilier.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Conseil Stratégique</h3>
+                        <p>Accompagnement dans la prise de décision, analyse de marché et stratégie de développement.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-globe-africa"></i>
+                        </div>
+                        <h3>Développement International</h3>
+                        <p>Expansion internationale, partenariats cross-border et optimisation des opérations multinationales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTS SECTION -->
+        <section id="contacts" class="section">
+            <div class="container">
+                <h2 class="section-title">Contactez-Nous</h2>
+                <p class="section-subtitle">Notre équipe est à votre disposition pour concrétiser vos projets</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Informations de Contact</h3>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Adresse</strong><br>
+                                Foire immeuble 147, Dakar, Sénégal
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Téléphone</strong><br>
+                                +221 78 437 22 13
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong><br>
+                                contact@mncapital-group.com
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Horaires</strong><br>
+                                Lun-Ven: 8h-18h<br>
+                                Sam: 9h-13h
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Envoyez-nous un Message</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="nom">Nom Complet</label>
+                                <input type="text" id="nom" name="nom" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="sujet">Sujet</label>
+                                <input type="text" id="sujet" name="sujet" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                <i class="fas fa-paper-plane"></i>
+                                Envoyer le Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="img/mn-capital-logo.png" alt="M&N Capital Group" class="footer-logo" loading="lazy" style="height: 60px; margin-bottom: 1rem;">
+                    <p>M&N Capital Group est un groupe d'investissement stratégique de premier plan qui fédère des entreprises spécialisées dans des secteurs clés de l'économie africaine.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#apropos">À Propos</a></li>
+                        <li><a href="#filiales">Nos Filiales</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Nos Filiales</h3>
+                    <ul>
+                        <li><a href="../../cea/index-extraordinaire.html" target="_blank">CEA</a></li>
+                        <li><a href="https://www.cautiona.sn" target="_blank">CAUTIONA</a></li>
+                        <li><a href="#filiales">JESMAG</a></li>
+                        <li><a href="../../digiplus/index.html" target="_blank">Digi+</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +221 78 437 22 13</li>
+                        <li><i class="fas fa-envelope"></i> contact@mncapital-group.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Foire immeuble 147, Dakar</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 M&N Capital Group. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('header');
+            if (window.scrollY > 100) {
+                navbar.style.padding = '0.5rem 0';
+            } else {
+                navbar.style.padding = '1rem 0';
+            }
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        
+        hamburger.addEventListener('click', function() {
+            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active navigation highlight
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

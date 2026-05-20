@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JESMAG - Commerce et Distribution International | M&N Capital Group</title>
+    <style>
+        /* M&N Capital Group - Corporate Professional Style */
+
+        /* Variables CSS Corporate */
+        :root {
+            --primary-dark: #0a0e27;
+            --primary-blue: #1e3a8a;
+            --accent-gold: #f59e0b;
+            --accent-red: #dc2626;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --bg-light: #f9fafb;
+            --bg-white: #ffffff;
+            --border-light: #e5e7eb;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Typography Corporate */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700;900&display=swap');
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-white);
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* Corporate Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            border-bottom: 1px solid var(--border-light);
+            transition: all 0.3s ease;
+        }
+
+        .navbar {
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo img {
+            height: 45px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover img {
+            transform: scale(1.05);
+        }
+
+        .logo-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            letter-spacing: -0.025em;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-blue);
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-blue);
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary-dark);
+            transition: all 0.3s ease;
+        }
+
+        /* Hero Section */
+        .hero-jesmag {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-jesmag .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+            padding: 0 2rem;
+        }
+
+        .hero-jesmag .hero-content img {
+            height: 150px;
+            margin-bottom: 1rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            background: white;
+            padding: 20px;
+        }
+
+        .hero-jesmag h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .hero-jesmag p {
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        /* Service Detail Section */
+        .service-detail {
+            padding: 6rem 0;
+            background: var(--bg-light);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+            font-weight: 800;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            margin-bottom: 4rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .expertise-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-light);
+        }
+
+        .expertise-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-blue);
+        }
+
+        .expertise-item h3 {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .expertise-item p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Back Link */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: var(--primary-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .back-link:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-dark);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h4 {
+            color: var(--accent-gold);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-section p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-section ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .expertise-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-jesmag {
+                min-height: 50vh;
+            }
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-jesmag {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero-jesmag .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .hero-jesmag .hero-content img {
+            height: 150px;
+            margin-bottom: 1rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            background: white;
+            padding: 20px;
+        }
+        .hero-jesmag h1 {
+            color: #2c3e50;
+        }
+        .hero-jesmag .tagline {
+            color: #34495e;
+        }
+        .service-detail {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        .commerce-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .commerce-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .commerce-item:hover {
+            transform: translateY(-5px);
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #6c757d;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            color: #495057;
+        }
+        .products-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .product-category {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #6c757d;
+            text-align: center;
+        }
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .stat-item {
+            background: linear-gradient(135deg, #6c757d, #495057);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../img/mn-capital-logo.png" alt="M&N Capital Group">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../index.html#apropos">À Propos</a></li>
+                    <li><a href="../index.html#filiales">Nos Filiales</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero-jesmag">
+        <div class="hero-content">
+            <img src="../img/Jesmag.png.jpeg" alt="JESMAG" style="height: 150px; margin-bottom: 1rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); background: white; padding: 20px;">
+            <h1>JESMAG</h1>
+            <p class="tagline">Commerce et Distribution International</p>
+        </div>
+    </section>
+
+    <!-- Service Detail Section -->
+    <section class="service-detail">
+        <div class="container">
+            <a href="../index.html#filiales" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Retour aux filiales
+            </a>
+            
+            <div class="about-content">
+                <h2>Notre Magazine sur l'Entrepreneuriat</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                    JESMAG est la filiale média de M&N Capital Group spécialisée dans la publication d'un magazine 
+                    dédié à l'entrepreneuriat. Nous mettons en valeur les success stories, les conseils d'experts, 
+                    les opportunités d'affaires et les tendances du marché pour inspirer et guider les entrepreneurs vers le succès.
+                </p>
+            </div>
+
+            <!-- Statistiques -->
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <p>Pays partenaires</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <p>Produits distribués</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <p>Années d'expérience</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">0</div>
+                    <p>% de satisfaction client</p>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; margin-bottom: 2rem;">Nos Contenus Spécialisés</h3>
+            <div class="services-grid">
+                <div class="service-item-jesmag">
+                    <i class="fas fa-newspaper" style="font-size: 2.5rem; color: #e74c3c; margin-bottom: 1rem;"></i>
+                    <h3>Articles d'Expertise</h3>
+                    <p>Analyses approfondies, études de cas et conseils pratiques pour entrepreneurs.</p>
+                </div>
+                
+                <div class="service-item-jesmag">
+                    <i class="fas fa-users" style="font-size: 2.5rem; color: #e74c3c; margin-bottom: 1rem;"></i>
+                    <h3>Success Stories</h3>
+                    <p>Portraits d'entrepreneurs inspirants et parcours de réussite exceptionnels.</p>
+                </div>
+                
+                <div class="service-item-jesmag">
+                    <i class="fas fa-lightbulb" style="font-size: 2.5rem; color: #e74c3c; margin-bottom: 1rem;"></i>
+                    <h3>Innovation et Tendances</h3>
+                    <p>Dernières tendances du marché, innovations disruptives et opportunités émergentes.</p>
+                </div>
+                
+                <div class="service-item-jesmag">
+                    <i class="fas fa-chart-line" style="font-size: 2.5rem; color: #e74c3c; margin-bottom: 1rem;"></i>
+                    <h3>Analyses de Marché</h3>
+                    <p>Études sectorielles, analyses économiques et prévisions stratégiques.</p>
+                </div>
+                
+                <div class="service-item-jesmag">
+                    <i class="fas fa-handshake" style="font-size: 2.5rem; color: #e74c3c; margin-bottom: 1rem;"></i>
+                    <h3>Networking</h3>
+                    <p>Connexion entre entrepreneurs, investisseurs et partenaires potentiels.</p>
+                </div>
+                
+                <div class="service-item-jesmag">
+                    <i class="fas fa-rocket" style="font-size: 2.5rem; color: #e74c3c; margin-bottom: 1rem;"></i>
+                    <h3>Accélération</h3>
+                    <p>Programmes d'accélération et de mentorat pour startups et PME.</p>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; margin-bottom: 2rem;">Nos Services Commerciaux</h3>
+            <div class="commerce-grid">
+                <div class="commerce-item">
+                    <i class="fas fa-globe" style="font-size: 2.5rem; color: #6c757d; margin-bottom: 1rem;"></i>
+                    <h3>Import-Export</h3>
+                    <p>Gestion complète de vos opérations d'importation et exportation avec optimisation douanière.</p>
+                </div>
+                
+                <div class="commerce-item">
+                    <i class="fas fa-truck" style="font-size: 2.5rem; color: #6c757d; margin-bottom: 1rem;"></i>
+                    <h3>Logistique et Transport</h3>
+                    <p>Solutions de transport multimodal et gestion de la chaîne d'approvisionnement.</p>
+                </div>
+                
+                <div class="commerce-item">
+                    <i class="fas fa-store" style="font-size: 2.5rem; color: #6c757d; margin-bottom: 1rem;"></i>
+                    <h3>Distribution</h3>
+                    <p>Réseau de distribution national et international pour vos produits.</p>
+                </div>
+                
+                <div class="commerce-item">
+                    <i class="fas fa-handshake" style="font-size: 2.5rem; color: #6c757d; margin-bottom: 1rem;"></i>
+                    <h3>Sourcing et Procurement</h3>
+                    <p>Identification et qualification des meilleurs fournisseurs mondiaux.</p>
+                </div>
+                
+                <div class="commerce-item">
+                    <i class="fas fa-chart-line" style="font-size: 2.5rem; color: #6c757d; margin-bottom: 1rem;"></i>
+                    <h3>Conseil en Commerce</h3>
+                    <p>Stratégie d'expansion internationale et analyse de marché.</p>
+                </div>
+                
+                <div class="commerce-item">
+                    <i class="fas fa-warehouse" style="font-size: 2.5rem; color: #6c757d; margin-bottom: 1rem;"></i>
+                    <h3>Stockage et Entrepôt</h3>
+                    <p>Solutions de stockage sécurisées et gestion des inventaires.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Nos Catégories de Produits</h3>
+                <div class="products-showcase">
+                    <div class="product-category">
+                        <i class="fas fa-utensils" style="color: #6c757d; margin-bottom: 0.5rem;"></i>
+                        <h4>Produits Alimentaires</h4>
+                        <p>Importation de denrées de qualité</p>
+                    </div>
+                    <div class="product-category">
+                        <i class="fas fa-microchip" style="color: #6c757d; margin-bottom: 0.5rem;"></i>
+                        <h4>Électronique</h4>
+                        <p>Matériels et appareils technologiques</p>
+                    </div>
+                    <div class="product-category">
+                        <i class="fas fa-tshirt" style="color: #6c757d; margin-bottom: 0.5rem;"></i>
+                        <h4>Textile</h4>
+                        <p>Vêtements et accessoires</p>
+                    </div>
+                    <div class="product-category">
+                        <i class="fas fa-tools" style="color: #6c757d; margin-bottom: 0.5rem;"></i>
+                        <h4>Matériel BTP</h4>
+                        <p>Équipements de construction</p>
+                    </div>
+                    <div class="product-category">
+                        <i class="fas fa-pills" style="color: #6c757d; margin-bottom: 0.5rem;"></i>
+                        <h4>Produits Pharmaceutiques</h4>
+                        <p>Médicaments et parapharmacie</p>
+                    </div>
+                    <div class="product-category">
+                        <i class="fas fa-leaf" style="color: #6c757d; margin-bottom: 0.5rem;"></i>
+                        <h4>Produits Agricoles</h4>
+                        <p>Exportation de produits locaux</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem; text-align: center;">
+                <h3>Pourquoi choisir JESMAG ?</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div style="padding: 1.5rem; background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+                        <i class="fas fa-network-wired" style="font-size: 2rem; color: #6c757d; margin-bottom: 1rem;"></i>
+                        <h4>Réseau Mondial</h4>
+                        <p>Présence dans plus de 50 pays</p>
+                    </div>
+                    <div style="padding: 1.5rem; background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+                        <i class="fas fa-certificate" style="font-size: 2rem; color: #6c757d; margin-bottom: 1rem;"></i>
+                        <h4>Qualité Certifiée</h4>
+                        <p>Normes internationales garanties</p>
+                    </div>
+                    <div style="padding: 1.5rem; background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+                        <i class="fas fa-clock" style="font-size: 2rem; color: #6c757d; margin-bottom: 1rem;"></i>
+                        <h4>Rapidité d'Exécution</h4>
+                        <p>Livraisons dans les délais convenus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez JESMAG</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Développons vos opportunités commerciales</h3>
+                    <p>Notre équipe commerciale est prête à étudier vos besoins en import-export et distribution.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>jesmag@mn-capital-group.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Téléphone Direct</h4>
+                                <p>33 868 18 02</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Adresse</h4>
+                                <p>Dakar, Sénégal<br>Immeuble General Aluminium<br>Ouest Foire, près de la station Elton<br>Sénégal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="jesmagContactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px;">
+                                <option value="">Type de service</option>
+                                <option value="import">Importation</option>
+                                <option value="export">Exportation</option>
+                                <option value="distribution">Distribution</option>
+                                <option value="logistique">Logistique</option>
+                                <option value="conseil">Conseil commercial</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Décrivez votre projet commercial" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Demander un devis</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="../img/mn-capital-logo.png" alt="M&N Capital Group" class="footer-logo">
+                    <p>Des partenariats Solides pour des résultats durables</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="../index.html">Accueil M&N Capital</a></li>
+                        <li><a href="../index.html#filiales">Autres Filiales</a></li>
+                        <li><a href="#contact">Contact JESMAG</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 JESMAG - M&N Capital Group. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation smooth scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scroll pour les liens d'ancre
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const headerOffset = 80;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Mobile menu toggle
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('nav-menu');
+
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    hamburger.classList.toggle('active');
+                });
+            }
+
+            // Header scroll effect
+            let lastScroll = 0;
+            const header = document.getElementById('header');
+            
+            window.addEventListener('scroll', function() {
+                const currentScroll = window.pageYOffset;
+                
+                if (header) {
+                    if (currentScroll > 100) {
+                        header.style.background = 'rgba(255, 255, 255, 0.95)';
+                        header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+                    } else {
+                        header.style.background = 'rgba(255, 255, 255, 0.98)';
+                        header.style.boxShadow = 'var(--shadow-sm)';
+                    }
+                }
+                
+                lastScroll = currentScroll;
+            });
+
+            // Animation au scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            // Observer les éléments
+            document.querySelectorAll('.expertise-item').forEach(el => {
+                el.classList.add('fade-in');
+                observer.observe(el);
+            });
+        });
+
+        // Gestion du menu mobile
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            const hamburger = document.getElementById('hamburger');
+            
+            if (navMenu && hamburger) {
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            }
+        }
+
+        // Fermer le menu mobile lors du clic sur un lien
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navMenu = document.getElementById('nav-menu');
+                const hamburger = document.getElementById('hamburger');
+                
+                if (navMenu && hamburger) {
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                }
+            });
+        });
+
+        // Effets de hover améliorés
+        document.querySelectorAll('.back-link').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Lazy loading pour les images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.style.opacity = '1';
+                        observer.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img').forEach(img => {
+                img.style.opacity = '0';
+                img.style.transition = 'opacity 0.3s ease';
+                imageObserver.observe(img);
+            });
+        }
+
+        // Gestion des erreurs d'images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('error', function() {
+                this.style.display = 'none';
+                console.warn('Image non trouvée:', this.src);
+            });
+        });
+    </script>
+    <script>
+        // Animation des compteurs
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current);
+            }, 20);
+        }
+
+        // Observer pour déclencher l'animation
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px'
+        };
+
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach(stat => {
+                        const target = parseInt(stat.dataset.target);
+                        animateCounter(stat, target);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const statsContainer = document.querySelector('.stats-container');
+            if (statsContainer) {
+                statsObserver.observe(statsContainer);
+            }
+        });
+
+        document.getElementById('jesmagContactForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            showNotification('Demande envoyée à JESMAG! Nous vous contacterons rapidement.', 'success');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
